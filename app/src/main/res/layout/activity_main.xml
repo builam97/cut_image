@@ -24,7 +24,6 @@
         android:id="@+id/resultImageView"
         android:layout_width="150dp"
         android:layout_height="188dp"
-        android:layout_marginTop="50dp"
         android:layout_marginLeft="120dp"
         android:contentDescription="@string/todo" />
     </LinearLayout>
@@ -44,16 +43,17 @@
         android:text="+"/>
     <Button android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
         android:text="Save"
         android:id="@+id/button3"/>
 
         <ImageView
-        android:id="@+id/resultImageView2"
-        android:layout_width="150dp"
-        android:layout_height="188dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginLeft="120dp"
-        android:contentDescription="@string/todo" />
+            android:id="@+id/resultImageView2"
+            android:layout_width="150dp"
+            android:layout_height="188dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="80dp"
+            android:contentDescription="@string/todo" />
 
     </LinearLayout>
 

@@ -139,7 +139,7 @@ public class MainActivity extends AppCompatActivity {
         float marginLeft = (float) (bitmap1Width * 0.5 - bitmap2Width * 0.5);
         float marginTop = (float) (bitmap1Height * 0.5 - bitmap2Height * 0.5);
 
-        Bitmap finalBitmap = Bitmap.createBitmap(bitmap1Width+ bitmap2Width, bitmap1Height, bitmap1.getConfig());
+        Bitmap finalBitmap = bitmap1Height > bitmap2Height ? Bitmap.createBitmap(bitmap1Width+ bitmap2Width, bitmap2Height, overlayBitmap.getConfig()) : Bitmap.createBitmap(bitmap1Width+ bitmap2Width, bitmap1Height, overlayBitmap.getConfig());
         Canvas canvas = new Canvas(finalBitmap);
         canvas.drawBitmap(bitmap1, new Matrix(), null);
         canvas.drawBitmap(overlayBitmap, bitmap1Width, 0, null);
